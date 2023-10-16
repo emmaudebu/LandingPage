@@ -73,10 +73,11 @@ header {
   margin-top: 200px;
   background-color: var(--white);
   width: 700px;
-  padding: 40px;
+  padding: 40px 0px 40px;
   margin-left: -50px;
   padding-left: 50px;
 }
 .textsection :nth-child(2) {
   font-size: 20px;
+  line-height: 25px;
 }
