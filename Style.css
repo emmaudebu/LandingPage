@@ -6,6 +6,9 @@
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 }
+body {
+  overflow-x: hidden;
+}
 * {
   padding: 0;
   margin: 0;
@@ -19,7 +22,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 3rem;
 }
 nav ul {
   display: flex;
@@ -28,11 +30,53 @@ nav ul {
 }
 header {
   background-image: url("./images/desktop/image-hero.jpg");
-  background-size: cover;
-  padding-inline: 100px;
-  height: 60vh;
+  background-size: fill;
+  background-repeat: no-repeat;
+  padding-inline: 180px;
+  padding-top: 3rem;
+  height: 600px;
+  width: 100vw;
   font-family: "Alata", sans-serif;
 }
-
-@media (min-width: 375px) {
+.menuBar {
+  display: none;
+}
+.hero {
+  margin-block: 5rem;
+  border: 2px solid var(--white);
+  width: 30rem;
+  padding: 20px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 60px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.featured {
+  margin-top: 80px;
+  padding-inline: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.featured .title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-block: 20px;
+}
+.imgsection img {
+  width: 600px;
+  height: 400px;
+  object-fit: fill;
+}
+.textsection {
+  margin-top: 200px;
+  background-color: var(--white);
+  width: 700px;
+  padding: 40px;
+  margin-left: -50px;
+  padding-left: 50px;
+}
+.textsection :nth-child(2) {
+  font-size: 20px;
 }
