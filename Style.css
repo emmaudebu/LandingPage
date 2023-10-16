@@ -8,6 +8,7 @@
 }
 body {
   overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
 }
 * {
   padding: 0;
@@ -119,7 +120,6 @@ header {
   margin-bottom: 40px;
   margin-left: 40px;
 
-  font-family: "Josefin Sans", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -135,12 +135,15 @@ header {
   background: rgba(255, 255, 255, 0.411);
   cursor: pointer;
 }
+
 footer {
   padding-inline: 100px;
   background: var(--black);
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 30px;
 }
 
 .logosection {
@@ -154,4 +157,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+
+.icons section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.icons section span img {
+  width: 20px;
+  height: 20px;
+}
+.logosection img {
+  margin-top: 20px;
+  height: 30px;
+  width: 200px;
 }
