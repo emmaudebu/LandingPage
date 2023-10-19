@@ -194,7 +194,7 @@ span img {
     background-repeat: no-repeat;
     padding-inline: 5px;
     padding-top: 3rem;
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
     font-family: "Alata", sans-serif;
   }
@@ -202,11 +202,12 @@ span img {
     margin-block: 2rem;
     margin-inline: auto;
     border: 2px solid var(--white);
-    width: 80%;
+    width: 100%;
+    height: 40%;
     padding: 20px;
     text-transform: uppercase;
     color: var(--white);
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Josefin Sans", sans-serif;
   }
   .logo {
@@ -256,10 +257,13 @@ span img {
     margin-bottom: 30px;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
+    align-items: center;
   }
   .creation-title p {
     font-size: 20px;
     width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
   }
   .creation-title button {
     background: var(--black);
