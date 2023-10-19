@@ -181,22 +181,6 @@ button,
 span img {
   cursor: pointer;
 }
-li {
-  position: relative;
-}
-
-li::before {
-  content: "___";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 200px;
-  height: 20px;
-  color: white;
-}
-
-li:hover li::before {
-}
 
 @media (max-width: 480px) {
   .list {
@@ -211,13 +195,14 @@ li:hover li::before {
     padding-inline: 5px;
     padding-top: 3rem;
     height: 60vh;
-    width: 70vw;
+    width: 100vw;
     font-family: "Alata", sans-serif;
   }
   .hero {
     margin-block: 2rem;
+    margin-inline: auto;
     border: 2px solid var(--white);
-    width: 200px;
+    width: 80%;
     padding: 20px;
     text-transform: uppercase;
     color: var(--white);
@@ -227,6 +212,37 @@ li:hover li::before {
   .logo {
     height: 20px;
     width: 100px;
+  }
+  .featured {
+    margin-top: 20px;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .featured .title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-block: 20px;
+  }
+  .imgsection img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .textsection {
+    margin-top: 20px;
+    background-color: var(--white);
+    width: 100%;
+    padding: 10px 0px 10px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .textsection :nth-child(2) {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -258,5 +274,36 @@ li:hover li::before {
   .logo {
     height: 20px;
     width: 100px;
+  }
+  .featured {
+    margin-top: 20px;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .featured .title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-block: 20px;
+  }
+  .imgsection img {
+    width: 80vw;
+    height: 100%;
+    object-fit: fill;
+  }
+  .textsection {
+    margin-top: 200px;
+    background-color: var(--white);
+    width: 100%;
+    padding: 10px 0px 10px;
+    margin-left: -50px;
+    padding-left: 50px;
+  }
+  .textsection :nth-child(2) {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
