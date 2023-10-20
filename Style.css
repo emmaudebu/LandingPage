@@ -201,7 +201,10 @@ span img {
     padding: 10px;
     z-index: 1;
   }
-  .list .active {
+  .active {
+    display: block;
+  }
+  .close {
     display: block;
   }
   .list li {
